@@ -261,7 +261,7 @@ main .btn2 {
 /*------------------BOTON PARA EMPEZAR EL JUEGO ---------------------*/
 #botonEmpezar {
   position: relative;
-  top: -40px;
+  top: -10px;
   padding: 1em 1.8em;
   outline: none;
   border: 1px solid #303030;
