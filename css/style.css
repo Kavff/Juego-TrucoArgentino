@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#body {
+  background-image: url(../img/istockphoto-1046326882-612x612.jpg);
+  /* background-image: url(../img/black-.jpg);
+  background-image: url(../img/wood866659_960_720.jpg);
+  background-image: url(../img/hardwood-0.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  align-items: center;
+  font-size: 40px;
+  width: 100%;
+}
+header .container-h {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+header .container-h #icon {
+  display: none;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul a {
+  text-decoration: none;
+  color: black;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+header .logo a img {
+  margin-right: 8px;
+  height: 130px;
+  width: 220px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  /*     border: solid 5px black;
+ */
+  width: 80%;
+}
+
+#pc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main .player {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main .mesa {
+  position: relative;
+  left: 110px;
+}
+main .space-table {
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  width: 120px;
+  border: solid 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 12px;
+  margin-left: 5px;
+}
+
+section article ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3px;
+  cursor: pointer;
+}
+section article ul li {
+  list-style: none;
+}
+
+section article .btn {
+  background-color: rgb(192, 228, 216);
+  border-radius: 3px;
+  border-color: rgb(192, 228, 216);
+  color: black;
+  font-weight: bolder;
+  height: 35px;
+}
+main .btn2 {
+  background-color: rgb(192, 228, 216);
+  border-radius: 10px;
+  border-color: rgb(192, 228, 216);
+  color: black;
+  font-weight: bolder;
+  height: 40px;
+  width: 150px;
+}
+
+.card {
+  background-color: rgb(22, 43, 43);
+  height: 200px;
+  width: 130px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 8px;
+  position: relative;
+  right: -50px;
+}
+
+.botonesDelJuego {
+  position: absolute;
+  left: 450px;
+}
+
+
+#number {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* --------------------------------------SIMULADOR DE FRASES DE JUGADORES ------------------------- */
+
+
+.botonesFetch {
+  display: flex;
+  flex-direction: row;
+}
+
+#ver {
+  width: 250px;
+  height: 75px;
+  border-radius: 5px;
+  margin-right: 100px;
+  background-color: azure;
+  font-size: larger;
+  
+}
+
+#admin {
+  width: 250px;
+  height: 75px;
+  border-radius: 5px;
+  background-color: azure;
+  font-size: larger;
+}
+
+.mainPosteos {
+  color: wheat;
+  background-color: #1c7541;
+  height: 100%;
+  width: 100%;
+}
+
+.inputButtonReset {
+  margin-top: 10px;
+  width: 60px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.356);
+}
+
+.inputButtonSubmit {
+  margin-top: 10px;
+  margin-left: 175px;
+  width: 60px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.356);
+}
+
+#frasesApp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputText {
+  display: block;
+  width: 500px;
+  border-radius: 3px;
+}
+.inputText2 {
+  display: block;
+  height: 100px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+
+
+/* --------------------------CASCADA DE IMAGENES --------------------------------- */
+.allCards{
+  overflow: hidden;  
+  width: 100vh;
+  height: 200px;
+}
+
+.allCards span{
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
+  background-size: cover;
+  animation: animacion 10s linear forwards;
+}
+
+@keyframes animacion {
+
+  0% {
+    transform: translate(-250px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(700%);
+    opacity: 0;
+  } 
+}
+
+
+/*------------------BOTON PARA EMPEZAR EL JUEGO ---------------------*/
+#botonEmpezar {
+  position: relative;
+  top: -40px;
+  padding: 1em 1.8em;
+  outline: none;
+  border: 1px solid #303030;
+  background: #15864881;
+  color: #ffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 38px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1;
+  animation: decoloracion 5s linear forwards;
+
+ }
+ @keyframes decoloracion {
+
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  } 
+}
+
+
+ #botonEmpezar:hover {
+  box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+ 
+
+ transition-delay: 0.6s;
+ }
+ 
+ #botonEmpezar span {
+  position: absolute;
+ }
+ 
+ #botonEmpezar span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ae00ff);
+ }
+ 
+ #botonEmpezar:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.7s;
+ }
+ 
+ #botonEmpezar span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #001eff);
+ }
+ 
+ #botonEmpezar:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.7s;
+  transition-delay: 0.35s;
+ }
+ 
+ #botonEmpezar span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ae00ff);
+ }
+ 
+ #botonEmpezar:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.7s;
+  transition-delay: 0.17s;
+ }
+ 
+ #botonEmpezar span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #001eff);
+ }
+ 
+ #botonEmpezar:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.7s;
+  transition-delay: 0.52s;
+ }
+ 
+ #botonEmpezar:active {
+   background: #ae00af;
+
+  background: linear-gradient(to top right, #ae00af, #001eff);
+
+  color: #bfbfbf;
+  box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+  transition: 0.1s;
+ }
+ 
+ #botonEmpezar:active span:nth-child(1) 
+ span:nth-child(2) 
+ span:nth-child(2) 
+ span:nth-child(2) {
+  transition: none;
+  transition-delay: none;
+ }
+ 
+ .noOcuparEspacio{
+  position: absolute;
+  z-index: 100;
+  height: 170px;
+  width: 120px;
+  margin-top: 30px;
+  background-color: red;
+}
+
+.noOcuparEspacio1{
+  z-index: 50;
+  background-color: #001eff;
+}
+
+/* ---------------------------------STYLE INSTRUCCIONES----------------------------- */
+#mainInstruciones{
+  padding: 20px ;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1c7541;
+  width: 100%;
+  font-size: 25px;
+}
+
+#mainInstruciones section{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#mainInstruciones section h1 {
+  
+  color: wheat;
+  font-size: 50px;
+
+}
+
+#mainInstruciones  h3 {
+  display: flex;
+  align-items: center;
+  color: wheat;
+  font-size: 35px;
+}
+#mainInstruciones p {
+  font-size: 22px;
+}
+
+#mainInstruciones hr{
+  color: black;
+}
+
+#mainInstruciones ul {
+  color:wheat;
+}
+
+#mainInstruciones #especial{
+  font-size: 35px;
+  color:#630663
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRUCO ARGENTINO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="functionsPc.js"></script>
+    <script defer src="functions.js"></script>
+    <script defer src="fetch.js"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body id="body">
+
+    <header>
+        <div class="container-h">
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo.PNG" alt="" class="logo" />GameTime</a>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./html/instructions.html">Instrucciones </a> </li>
+                <li><a href="./html/posteoDeFrasesCelebres.html">Simulador Frases de jugadores </a> </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="allCards">
+    </section>
+    <button id="botonEmpezar">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> EMPEZAR JUEGO!
+    </button>
+
+    <main id="main">
+
+        <h1 id="title">EL FAMOSO TRUCO ARGENTINO</h1>
+
+        <div class="btnsTop">
+            <button id="btnGT" type="button" onclick="changeBackgroundImagenGT()" class="btn2">Tablero Verde</button>
+            <button id="btnBT" type="button" onclick="changeBackgroundImagenBT()" class="btn2">Tablero Negro</button>
+            <button id="btnTT" type="button" onclick="changeBackgroundImagenTT()" class="btn2">Tablero de
+                Tronco</button>
+            <button id="btnCT" type="button" onclick="changeBackgroundImagenCT()" class="btn2">Tablero de
+                Colores</button>
+        </div>
+
+        <section id="pc">
+            <div>
+                <h3>
+                    <div id="contador">Puntos
+                        <div>
+                            La maquina:<span id="puntosFinalesPc"> 0</span>
+                        </div>
+                        <div>
+                            <span id="usuarioNombre">Usuario</span><span>:</span><span id="puntosFinalesPlayer">
+                                0</span>
+                        </div>
+
+                    </div>
+
+                </h3>
+            </div>
+
+            <div id="cardPc1" class="cardPc"> </div>
+            <div id="cardPc2" class="cardPc"> </div>
+            <div id="cardPc3" class="cardPc"> </div>
+
+        </section>
+
+        <section class="mesa">
+            <div id="cardTable1" class="space-table">
+            </div>
+            <div id="cardTable2" class="space-table">
+            </div>
+            <div id="cardTable3" class="space-table">
+            </div>
+        </section>
+        
+        <section id="player">
+            <div>
+                <h3 id="playerP"></h3>
+            </div>
+            <div id="cardplayer1" class="cardPlayer"></div>
+            <div id="cardplayer2" class="cardPlayer"></div>
+            <div id="cardplayer3" class="cardPlayer"></div>
+
+            <article class="botonesDelJuego">
+                <ul>
+                    <li><button id="btnRepartir" type="button" class="btn">Repartir</button></li>
+                    <li><button id="btnTruco" type="button" class="btn">Truco</button></li>
+                    <li><button id="btnEnvido" type="button" class="btn">Envido</button></li>
+                    <li><button id="botonIrAlMazo" type="button" class="btn">Ir al Mazo</button></li>
+                </ul>
+            </article>
+        </section>
+
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
